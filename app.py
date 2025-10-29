@@ -42,5 +42,3 @@ def delete_item(item_id):
     items = [item for item in items if item["id"] != item_id]
     return jsonify({"result": True})
 
-if __name__ == "__main__":
-    app.run(debug=False)
